@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 source bin/variables.bash
 git push
 ssh root@$PROJECT_URL -t " \
@@ -6,5 +8,7 @@ ssh root@$PROJECT_URL -t " \
     source .venv/bin/activate ;\
     pip install -qr requirements.txt"
 
+# WIP:
+#
 # bash bin/service-reload-files.bash
 # bash bin/service-restart.bash
