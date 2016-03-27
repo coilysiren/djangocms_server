@@ -8,6 +8,8 @@ For managing multiple DjangoCMS installations on a server
 virtualenv -p python3.4 .venv
 source .venv/bin/activate
 pip install git+git://github.com/LynnCo/djangocms_server.git
+echo "PROJECT_NAME=YourCoolSite" >> .env
+export $(cat .env | xargs)
 djangocms -p . $PROJECT_NAME
 ```
 
