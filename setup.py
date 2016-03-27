@@ -13,4 +13,5 @@ setup(
   classifiers = [],
   install_requires=['djangocms-installer'],
   scripts=glob.glob('bin/*'),
+  include_package_data=True,
 )
