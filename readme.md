@@ -2,7 +2,7 @@
 
 **(( This Code is a Work in Progress!!!))**
 
-For managing multiple DjangoCMS installations on a server
+For managing DjangoCMS installation(s) on a server
 
 ```
 virtualenv -p python3.4 .venv
