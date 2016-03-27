@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source bin/variables.bash
+export $(cat .env | xargs)
 git push
 ssh root@$PROJECT_URL -t " \
     cd /home/apps/$PROJECT_FOLDER ;\

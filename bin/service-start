@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source bin/variables.bash
+export $(cat .env | xargs)
 service $PROJECT_NAME-gunicorn start \
     PROJECT_NAME=$PROJECT_NAME \
     PROJECT_FOLDER=$PROJECT_FOLDER \
