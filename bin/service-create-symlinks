@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
 export $(cat .env | xargs)
-ln -s /home/apps/$PROJECT_FOLDER/bin/service-init-gunicorn.conf /etc/init/$PROJECT_NAME-gunicorn.conf
-# ln -s /home/apps/$PROJECT_FOLDER/bin/service-init-nginx.conf /etc/nginx/sites-available/$PROJECT_NAME-nginx.conf
+ln -s \
+    $VIRTUAL_ENV/lib/python3.4/site-packages/djangocms_server/service-init-gunicorn.conf \
+    /etc/init/$PROJECT_NAME-gunicorn.conf
+# also nginx

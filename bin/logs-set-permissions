@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
 export $(cat .env | xargs)
+PROJECT_FOLDER=(${VIRTUAL_ENV//.venv/ })
+
 chown www-data /var/log/gunicorn
-chown www-data /home/apps/$PROJECT_FOLDER/log/
+chown www-data $PROJECT_FOLDER'/log/'

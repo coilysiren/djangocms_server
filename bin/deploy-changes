@@ -3,7 +3,7 @@
 export $(cat .env | xargs)
 git push
 ssh root@$PROJECT_URL -t " \
-    cd /home/apps/$PROJECT_FOLDER ;\
+    cd /home/apps/*$PROJECT_NAME* ;\
     git pull ;\
     source .venv/bin/activate ;\
     pip install -qr requirements.txt"
