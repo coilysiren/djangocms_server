@@ -1,4 +1,4 @@
-import djangocms_server
+import glob
 from distutils.core import setup
 
 setup(
@@ -12,4 +12,5 @@ setup(
   keywords = ['django'],
   classifiers = [],
   install_requires=['djangocms-installer'],
+  scripts=glob.glob('bin/*'),
 )
