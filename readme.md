@@ -1,7 +1,5 @@
 # DjangoCMS Server Manager
 
-**(( This Code is a Work in Progress!!!))**
-
 For managing DjangoCMS installation(s) on a server
 
 ```
